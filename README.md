@@ -456,7 +456,7 @@
 
         // 삭제 로직 (더블 클릭 이벤트 대응)
         window.confirmDeletePost = (id) => {
-            if (confirm("이 소중한 기억을 삭제할까요?")) {
+            if (confirm("삭제할까요?")) {
                 deleteDoc(doc(db, 'artifacts', appId, 'public', 'data', 'posts', id));
             }
         };
